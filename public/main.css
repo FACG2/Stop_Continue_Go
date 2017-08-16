@@ -1,0 +1,155 @@
+/*Add styling below*/
+body {
+    margin: 2% 15% 0 15%;
+    background-color: #ccccff;
+}
+@font-face {
+    font-family: Action_Man_Shaded_Italic;
+    src: url(../public/fonts/Action_Man_Shaded_Italic.ttf);
+}
+@font-face {
+    font-family: Artifika-Regular;
+    src: url(../public/fonts/Artifika-Regular.ttf);
+}
+@font-face {
+    font-family: Action_Man;
+    src: url(../public/fonts/Action_Man.ttf);
+}
+h1{
+  text-align: center;
+  font-family: Action_Man_Shaded_Italic;
+  font-size: 60px;
+}
+#stop-span{
+color: red;
+}
+#con-span{
+color: orange;
+}
+#go-span{
+color: green;
+}
+input[type=text], select, #input-content {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Action_Man;
+    font-size: 20px;
+}
+select{
+  margin-top: 0;
+}
+#input-content{
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  resize: none;
+  height: 120px;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: Action_Man;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+#secLabel {
+  font-style: italic;
+  font-weight: bolder;
+}
+.container {
+  color: #15046b;
+  font-size: 20px;
+  font-family: Artifika-Regular;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+p {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: Artifika-Regular;
+  color: #15046b;
+}
+.tables-container {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: Artifika-Regular;
+}
+tr {
+    height: 35px;
+}
+th {
+  color: #15046b;
+  text-align: left;
+  width: 91%;
+  border-bottom: 1px solid lightgrey;
+}
+hr{
+  color: silver;
+}
+#footer {
+  color: #6A6E71;
+  padding: 20px 0;
+  text-align: center;
+  overflow: hidden;
+}
+#footer span {
+  float: center;
+  font-size: 18px;
+}
+/*Tablet */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 50px;
+  }
+  input[type=text], select, #input-content, .container {
+    font-size: 18px;
+  }
+  input[type=submit] {
+    font-size: 18px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .tables-container {
+    font-size: 15px;
+  }
+  #footer span {
+    font-size: 15px;
+  }
+}
+/*Mobile*/
+@media only screen and (max-width: 500px) {
+    h1 {
+      font-size: 46px;
+    }
+    input[type=text], select, #input-content, .container {
+      font-size: 16px;
+    }
+    input[type=submit] {
+      font-size: 18px;
+    }
+    p {
+      font-size: 18px;
+    }
+    .tables-container {
+      font-size: 12px;
+      text-align: center;
+    }
+    #footer span {
+      font-size: 15px;
+    }
+}
