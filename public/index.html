@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>PG workshop - get users from the database</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <h1>
+      <span id="stop-span"> Stop </span>
+      <span id="con-span"> Continue </span>
+      <span id="go-span"> Go </span>
+    </h1>
+
+      <div class="container">
+        <form class="form" action="/create-scg" method="post">
+             <label for="input-name">Your Name : </label>
+             <input type="text" name="name" id="input-name" placeholder="Name" required>
+             <label text="Section" id="secLabel">Section :  </label>
+           <form id="sec">
+             <input id="stop" type="radio" name="scg-sec" value="Stop" checked>
+             <label for="stop"><span><span></span></span> Stop </label>
+             <input id="con"type="radio" name="scg-sec" value="Continue">
+             <label for="con"><span><span></span></span> Continue </label>
+             <input id="go" type="radio" name="scg-sec" value="Go">
+             <label for="go"><span><span></span></span> Go </label>
+           </form>
+
+             <textarea name="message" title="Contents" type="text" id="input-content" maxlength="100" placeholder="What would you say ?"></textarea>
+             <input type="submit" value="Submit" id="input-submit">
+         </form>
+       </div>
+       <div id="choose-date">
+        <p> Please choose the date to show the list of Stop-Continue-Go : </p>
+        <form>
+          <select id="scg-date" name="scg-date">
+            <option value="today">Today</option>
+            <option value="ca">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+        </form>
+      </div>
+      <div class="tables-container">
+        <table id="s-table">
+            <tr>
+                <th>  Stop  </th>
+                <th>  User  </th>
+            </tr>
+          </table>
+          <table id="c-table">
+            <tr>
+                <th>  Cont.  </th>
+                <th>  User  </th>
+            </tr>
+          </table>
+          <table id="g-table">
+            <tr>
+                <th>  Go  </th>
+                <th>  User  </th>
+            </tr>
+          </table>
+        </div>
+        <hr>
+        <footer id="footer">
+          <span>Copyright © 2017 by Stop-Continue-Go team.</span>
+        </footer>
+  <script type="text/javascript" src="./app.js"></script>
+</body>
+
+</html>
