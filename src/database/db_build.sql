@@ -1,7 +1,7 @@
 BEGIN ;
-DROP TABLE IF EXISTS user,scg CASCADE ;
+DROP TABLE IF EXISTS users, scg CASCADE ;
 
-CREATE TABLE user(
+CREATE TABLE users(
 id SERIAL PRIMARY KEY NOT NULL ,
 name VARCHAR(100) NOT NULL
 
@@ -14,11 +14,11 @@ content text Not Null,
 type VARCHAR(30) Not NUll,
 sessionDate Date NOT NULL,
 points integer ,
-user_id SERIAL REFERENCES user(id)
+user_id SERIAL REFERENCES users(id)
          ON UPDATE CASCADE ON DELETE CASCADE
 );
 
-INSERT INTO user (name) VALUES ('Hana Jebril'),
+INSERT INTO users (name) VALUES ('Hana Jebril'),
 ('Mahmoud Alwadia'),
 ('Qamar Alfalojy'),
 ('Ahmed Ajour'),

@@ -1,9 +1,9 @@
 const http = require('http');
 const fs = require('fs');
 const pg = require('pg');
-const getData = require('./queries/getData.js');
 const postData = require('./queries/postData.js');
 const queryString = require('querystring');
+const getData = require('./queries/getData.js');
 
 const router = (request, response) => {
     const endpoint = request.url.split('/')[1];
@@ -21,8 +21,8 @@ const router = (request, response) => {
                 response.end(file);
             }
         });
-    } else if (endpoint === "users") {
-          getData((err, res) => {
+    } else if (endpoint === "fff") {
+        getData((err, res) => {
             if (err) {
                 response.writeHead(500, 'Content-Type:text/html');
                 response.end('<h1>Sorry, there was a problem getting the users</h1>');
@@ -35,7 +35,7 @@ const router = (request, response) => {
                 response.end(output);
             }
         });
-    } else if (endpoint === "create-user") {
+    } else if (endpoint === "create-scg") {
         let data = '';
         request.on('data', function(chunk) {
             data += chunk;

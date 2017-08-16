@@ -11,6 +11,7 @@ function request(url, cb) {
     xhr.open("GET", url, true)
     xhr.send()
 }
+
 function updateDom(err, data) {
     if (err) {
         console.log(err)
@@ -51,4 +52,4 @@ function updateDom(err, data) {
     }
 }
 
-request('/submit', updateDom)
+request('/users', updateDom)
