@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/FACG2/Stop_Continue_Go/issues"
   },
-  "homepage": "https://github.com/FACG2/Stop_Continue_Go#readme"
+  "homepage": "https://github.com/FACG2/Stop_Continue_Go#readme",
+  "keywords": [],
+  "dependencies": {
+    "pg": "^7.1.2"
+  }
 }
