@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>PG workshop - get users from the database</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>
+        Stop GO Continue
+    </h1>
+    <div class="container">
+        <form class="form" action="/create-scg" method="post">
+            <label for="input-name">Your Name : </label>
+            <input type="text" name="name" id="input-name" placeholder="Name" required>
+            <label text="Section" id="secLabel">Section :  </label>
+            <form id="sec">
+                <input id="stop" type="radio" name="scg-sec" value="Stop" checked>
+                <label for="stop"><span><span></span></span> Stop </label>
+                <input id="con" type="radio" name="scg-sec" value="Continue">
+                <label for="con"><span><span></span></span> Continue </label>
+                <input id="go" type="radio" name="scg-sec" value="Go">
+                <label for="go"><span><span></span></span> Go </label>
+            </form>
+            <form id="add-todo">
+                <input type="text" id="desc" name="description" value="" aria-labelledby="add-todo" placeholder="Say whatever you want . . " maxlength="100" required>
+                <input type="submit" name="sub" value="Add" class="addBtn">
+            </form>
+    </div>
+    <div class="subDiv"> <input type="submit" class="subBtn" value="Submit" id="input-submit">
+    </div>
+    </form>
+    </div>
+
+    <hr>
+    <footer id="footer">
+        <span>Copyright © 2017 by Stop-Continue-Go team.</span>
+    </footer>
+    <script type="text/javascript" src="./dom.js"></script>
+</body>
+
+</html>
