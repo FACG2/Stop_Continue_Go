@@ -16,6 +16,62 @@ h1 {
     width: 100%;
 }
 
+span {
+    text-justify: distribute;
+}
+
+ul {
+    margin: auto;
+    padding: 0 0 0 0;
+    width: 50%;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 25px 8px 12px 40px;
+    background: #A2DED0;
+    font-size: 25px;
+    color: black;
+    transition: 0.2s;
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    list-style: none;
+    max-width: 546px;
+}
+
+ul li:nth-child(odd) {
+    background: #65C6BB;
+}
+
+ul li:hover {
+    background: #26A65B;
+}
+
+.close {
+    position: absolute;
+    height: 65px;
+    right: 0;
+    top: 0;
+    padding: 30px 50px 16px 25px;
+    border: none;
+    background-image: url('img/del.png');
+    background-size: 70px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    border-left: 1px solid #95a5a6;
+}
+
+.close:hover {
+    background-color: #e74c3c;
+    color: white;
+    /* height: 65px; */
+    cursor: pointer;
+}
+
 #desc {
     width: 84%;
 }
@@ -45,7 +101,7 @@ select {
 }
 
 .subBtn {
-    width: 40%;
+    width: 30%;
     background-color: #27ae60;
     color: white;
     padding: 14px 20px;
