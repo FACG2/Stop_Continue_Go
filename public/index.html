@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>PG workshop - get users from the database</title>
+    <title>SGC,The simpelest way!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
@@ -16,7 +16,7 @@
     </h1>
     <div class="container">
         <form class="form" action="/create-scg" method="post">
-            <label for="input-name">Your Name : </label>
+            <label for="input-name">Your Name (optional) : </label>
             <input type="text" name="name" id="input-name" placeholder="Name" required>
             <label text="Section" id="secLabel">Section :  </label>
             <form id="sec">
@@ -27,9 +27,13 @@
                 <input id="go" type="radio" name="scg-sec" value="Go">
                 <label for="go"><span><span></span></span> Go </label>
             </form>
-            <form id="add-todo">
+            <form id="add-note">
                 <input type="text" id="desc" name="description" value="" aria-labelledby="add-todo" placeholder="Say whatever you want . . " maxlength="100" required>
                 <input type="submit" name="sub" value="Add" class="addBtn">
+                <div id="showContainer">
+
+
+                </div>
             </form>
     </div>
     <div class="subDiv"> <input type="submit" class="subBtn" value="Submit" id="input-submit">
